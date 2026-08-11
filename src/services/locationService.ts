@@ -1,4 +1,4 @@
-import type{ LocationItem, CoverageZone } from '../types';
+import type{ LocationItem} from '../types';
 import { MOCK_LOCATIONS, MOCK_COVERAGE_ZONES } from '../data/mockData';
 
 export interface GeolocationResult {
