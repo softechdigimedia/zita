@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Header } from './components/layout/Header';
 import { BottomNav } from './components/layout/BottomNav';
@@ -208,7 +208,9 @@ export default function App() {
         </main>
 
         {/* Footer */}
-        <Footer onNavigate={handleNavigate} />
+        <Footer onNavigate={handleNavigate} onOpenCheckAvailability={function (): void {
+          throw new Error('Function not implemented.');
+        } } />
 
         {/* Floating Bottom Nav */}
         <BottomNav
@@ -231,7 +233,7 @@ export default function App() {
         <AvailabilityModal
           isOpen={isAvailabilityModalOpen}
           onClose={() => setIsAvailabilityModalOpen(false)}
-          onNavigate={handleNavigate}
+   
         />
       </div>
     </ThemeProvider>

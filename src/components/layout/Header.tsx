@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  currentPath,
+
   onNavigate,
   onOpenCheckAvailability,
   onOpenMobileMenu

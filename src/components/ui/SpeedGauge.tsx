@@ -47,8 +47,8 @@ export const SpeedGauge: React.FC<SpeedGaugeProps> = ({ compactMode = false }) =
     }, 1200);
 
     // Step 2: Download Speed Sweep
-    let dlInterval: NodeJS.Timeout;
-    let targetDownload = 480 + Math.floor(Math.random() * 80); // ~500 Mbps fiber speed
+    let dlInterval: ReturnType<typeof setInterval>;
+    const targetDownload = 480 + Math.floor(Math.random() * 80); // ~500 Mbps fiber speed
     let currentDl = 10;
 
     setTimeout(() => {
@@ -71,8 +71,8 @@ export const SpeedGauge: React.FC<SpeedGaugeProps> = ({ compactMode = false }) =
     }, 1300);
 
     // Step 3: Upload Speed Sweep
-    let ulInterval: NodeJS.Timeout;
-    let targetUpload = 470 + Math.floor(Math.random() * 70);
+    let ulInterval: ReturnType<typeof setInterval>;
+    const targetUpload = 470 + Math.floor(Math.random() * 70);
     let currentUl = 10;
 
     setTimeout(() => {

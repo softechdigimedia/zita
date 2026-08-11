@@ -13,11 +13,6 @@ import {
   Tv,
   Film,
   Crown,
-  MapPin,
-  Shield,
-  RotateCcw,
-  FileText,
-  Users,
   Menu,
   X,
   Gauge
